@@ -1,0 +1,204 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-xs: 450px;
+  --breakpoint-sm: 575px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+
+  --color-current: currentColor;
+  --color-transparent: transparent;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-dark: #9da4b0;
+  --color-primary: #DBA160;
+  --color-yellow: #fbb040;
+  --color-bg-color-dark: #171c28;
+
+  --color-body-color: #788293;
+  --color-body-color-dark: #959cb1;
+
+  --color-stroke-stroke: #e3e8ef;
+  --color-stroke-dark: #353943;
+
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  --color-gray-950: #030712;
+  --color-gray-dark: #1e232e;
+  --color-gray-light: #f0f2f9;
+
+  --shadow-sign-up: 0px 5px 10px rgba(4, 10, 34, 0.2);
+  --shadow-one: 0px 2px 3px rgba(7, 7, 77, 0.05);
+  --shadow-two: 0px 5px 10px rgba(6, 8, 15, 0.1);
+  --shadow-three: 0px 5px 15px rgba(6, 8, 15, 0.05);
+  --shadow-sticky: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+  --shadow-sticky-dark: inset 0 -1px 0 0 rgba(255, 255, 255, 0.1);
+  --shadow-feature-2: 0px 10px 40px rgba(48, 86, 211, 0.12);
+  --shadow-submit: 0px 5px 20px rgba(4, 10, 34, 0.1);
+  --shadow-submit-dark: 0px 5px 20px rgba(4, 10, 34, 0.1);
+  --shadow-btn: 0px 1px 2px rgba(4, 10, 34, 0.15);
+  --shadow-btn-hover: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  --shadow-btn-light: 0px 1px 2px rgba(0, 0, 0, 0.1);
+
+  --drop-shadow-three: 0px 5px 15px rgba(6, 8, 15, 0.05);
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+:root {
+  --font-primary: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-black);
+}
+
+.hero-banner .slider-container .slick-slider .slick-dots {
+  bottom: 20px;
+}
+
+.hero-banner .slider-container .slick-slider .slick-dots li {
+  width: 15px;
+  height: 15px;
+}
+
+.hero-banner .slider-container .slick-slider .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+}
+
+.hero-banner .slider-container .slick-slider .slick-dots li.slick-active button {
+  background-color: var(--color-primary);
+}
+
+.hero-banner .slider-container .slick-slider .slick-dots li button:before {
+  content: none;
+}
+
+.what-we-do .parent {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.what-we-do .parent .div1 {
+  grid-area: 1 / 1 / 4 / 7;
+}
+
+.what-we-do .parent .div2 {
+  grid-area: 4 / 1 / 7 / 7;
+}
+
+.what-we-do .parent .div3 {
+  grid-area: 7 / 1 / 10 / 7;
+}
+
+.what-we-do .parent .div4 {
+  grid-area: 1 / 7 / 5 / 10;
+}
+
+.what-we-do .parent .div5 {
+  grid-area: 5 / 7 / 10 / 10;
+}
+
+.design-slider .slider-container .slick-slider .slick-dots {
+  width: 50%;
+  right: 0;
+  bottom: 0px;
+  background: #000;
+  padding: 10px;
+  text-align: left;
+}
+
+.design-slider .slider-container .slick-slider .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+}
+
+.design-slider .slider-container .slick-slider .slick-dots li.slick-active button {
+  padding: 3px;
+  position: relative;
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.design-slider .slider-container .slick-slider .slick-dots li button:before {
+  content: none;
+}
+
+.design-slider .slider-container .slick-slider .slick-arrow {
+  top: unset;
+  bottom: 0px;
+  z-index: 10;
+}
+
+.design-slider .slider-container .slick-slider .slick-arrow.slick-prev {
+  left: unset;
+  right: 100px;
+}
+
+.design-slider .slider-container .slick-slider .slick-arrow.slick-next {
+  right: 50px;
+}
+
+.fixed-menu .studio-logo:before {
+  background: url('./assets/curve-btm.svg');
+  background-position: bottom center;
+  background-size: cover;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .design-slider .slider-container .slick-slider .slick-dots {
+    width: 100%;
+    right: 0;
+    bottom: -50px;
+    background: #000;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .design-slider .slider-container .slick-slider .slick-arrow.slick-prev {
+    left: 0%;
+  }
+
+  .design-slider .slider-container .slick-slider .slick-arrow.slick-next {
+    right: 0%;
+    bottom: unset;
+  }
+
+  .design-slider .slider-container .slick-slider .slick-arrow {
+    top: 49%;
+    bottom: unset;
+  }
+}
