@@ -26,7 +26,7 @@ const Hero = () => {
               <div className="w-full flex pr-16 lg:pr-0">
                 <a
                   href="https://api.whatsapp.com/send?phone=9043463200&text=Hi%20studio6interiors!%20I%20need%20more%20info%20about%20your%20products"
-                  className="block w-full px-7 py-2 lg:text-lg md:text-base text-sm text-center text-black font-bold bg-[#DBA160] hover:opacity-70"
+                  className="block w-full px-7 py-2 lg:text-lg md:text-base text-sm text-center text-black font-bold bg-[#DBA160]  hover:bg-[#ffff]"
                   target="_blank"
                 >
                   Starting at ₹ 3.4Lacs*

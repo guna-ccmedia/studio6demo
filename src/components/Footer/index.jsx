@@ -110,8 +110,9 @@ const Footer = () => {
                       className="w-1/2 lg:p-4 p-2 rounded-md bg-transparent text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-primary border-2"
                     /> */}
                     <a
-                      href="https://api.whatsapp.com/send?phone=9043463200&text=Hi%20studio6interiors!%20I%20need%20more%20info%20about%20your%20products"
+                      href="https://api.whatsapp.com/send?phone=9043463200&text=Hi%20studio6interiors!%20I%20need%20more%20info%20about%20your%20products" 
                       className="flex items-center gap-2 w-full h-full ml-4 !bg-primary text-black !p-2 lg:!p-4 rounded-md hover:bg-primary-dark transition-colors duration-200 lg:text-base md:text-sm text-xs font-bold"
+                      target="_blank"
                     >
                       <div className="bg-[#28a519] p-2 rounded-full shadow-md">
                         <FaWhatsapp className="text-white w-6 h-6" />

@@ -20,7 +20,9 @@ const DesignsHero = () => {
                     sit phasellus mollis sit aliquam sit nullam.
                   </p> */}
                   <div className="flex gap-4 mb-6">
-                    <button className="lg:text-lg md:text-base text-sm !bg-black text-white font-medium lg:!px-4 !px-2 py-2 rounded-md hover:bg-gray-800 transition">
+                    <button className="text-sm md:text-base lg:text-lg font-medium px-2 lg:px-4 py-2 rounded-md bg-[#DBA160] text-white  hover:!bg-white hover:text-black transition-all duration-1000 "style={{ border: 'none', outline: 'none' }}
+                    onClick={() => window.open('https://api.whatsapp.com/send?phone=9043463200&text=Hi%20studio6interiors!%20I%20need%20more%20info%20about%20your%20products', '_blank')}
+                    >
                       Book for free consultation →
                     </button>
                     {/* <button className="lg:text-lg md:text-base text-sm !border-2 !border-black !bg-transparent text-black font-medium lg:!px-4 !px-2 py-2 rounded-md">
@@ -51,7 +53,7 @@ const DesignsHero = () => {
                       </div>
                     </a>
 
-                    <a href="https://api.whatsapp.com/send?phone=9043463200&text=Hi%20studio6interiors!%20I%20need%20more%20info%20about%20your%20products">
+                    <a href="https://api.whatsapp.com/send?phone=9043463200&text=Hi%20studio6interiors!%20I%20need%20more%20info%20about%20your%20products" target="_blank">
                       <div className="flex flex-col items-center">
                         <div className="bg-[#28a519] p-2 rounded-full shadow-md">
                           <FaWhatsapp className="text-white w-6 h-6" />
